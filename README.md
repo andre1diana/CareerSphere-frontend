@@ -76,14 +76,12 @@ This web application is a job recruitment platform (inspired by LinkedIn), desig
 1. Clone the repository:
    ```bash
    git clone https://github.com/andre1diana/CareerSphere-frontend.git
-   cd CareerSphere-frontend/frontend
-   
+   cd CareerSphere-frontend
 
 2. Install frontend dependencies:
    ```
    npm install
-   
 
 3. Start the frontend development server:
-```
-npm start
+   ```
+   npm start
