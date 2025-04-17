@@ -1,0 +1,273 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-weight: 500;
+  width: 200px; 
+  text-align: center;
+}
+
+.tabs button:hover {
+  transform: scale(1.05);
+}
+
+.tabs button.active {
+  background-color: #0077b6;
+  color: white;
+}
+
+.tab-content {
+  text-align: left;
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+  height: max-content;
+  min-height: 300px;
+}
+
+.profile-section h4 {
+  margin-bottom: 10px;
+  color: #444;
+  min-height: 50px;
+}
+
+.profile-item {
+  background-color: #f5faff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.item-period {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #0077b6;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-button,
+.add-button,
+.save-button {
+  padding: 6px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-button {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.add-button {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.save-button {
+  background-color: #008cba;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ec971f;
+  transform: scale(1.05);
+}
+
+.add-button:hover {
+  background-color: #4cae4c;
+  transform: scale(1.05);
+}
+
+.save-button:hover {
+  background-color: #005f7f;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+.period-dropdowns {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.add-skill {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.skill .delete-button {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.skill .delete-button:hover {
+  transform: scale(1.2);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 50px; /* spațiu de 50px sus */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px); /* 100% din înălțimea viewport-ului minus 50px */
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* asigură că modalul începe de sus */
+  z-index: 9999; /* mai mare decât navbar/footer */
+  overflow-y: auto; /* Permite scroll pe overlay */
+}
+
+.edit-modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-height: calc(100vh - 100px); /* Asigură că modalul nu depășește viewport-ul */
+  overflow-y: auto; /* Permite scroll în interiorul modalului */
+}
+
+
+.edit-modal h2 {
+  margin-bottom: 1rem;
+}
+
+.edit-modal input,
+.edit-modal textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.preview-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-bio{
+  text-align: center !important;
+}
+.profile-title{
+  text-align: center;
+}
+.profile-location{
+  text-align: center;
+}

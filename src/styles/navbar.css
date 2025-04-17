@@ -1,0 +1,162 @@
+.navbar {
+  background-color: #68D1A6;
+  /*padding: 0.75rem 1.5rem;*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navbar-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.navbar-title:hover {
+  color: #d4d4d4;
+}
+
+.navbar-nav .nav-link.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link.nav-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+}
+
+.navbar-nav .nav-link.nav-icon i {
+  font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link.nav-icon span {
+  font-size: 0.75rem;
+  margin-top: 3px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #68D1A6;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #47ba8a;
+  color: white;
+}
+
+/* Buton dropdown */
+.nav-item .dropdown-toggle {
+  color: white !important;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+/* Search + buttons */
+.form-inline input[type="text"] {
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+}
+
+/* Stil pentru butoanele din navbar */
+.btn-outline-light {
+  border-radius: 20px;
+  padding: 0.5rem 1rem; /* Redu lățimea butonului */
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px; /* Asigură o înălțime uniformă pentru toate butoanele */
+  margin-left: 10px;
+  margin-top: 8px; /* Uniformizează marginea sus */
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #28a745 !important;
+}
+
+/* Corectarea aliniamentului pentru formularul de căutare */
+.form-inline {
+  display: flex;
+  align-items: center; /* Asigură alinierea corectă a inputului și butonului */
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.form-control {
+  height: 38px; /* Setează înălțimea inputului la aceeași valoare cu butoanele */
+}
+
+.form-inline .btn {
+  margin-left: 5px;
+  height: 38px; /* Înălțimea butonului de căutare este acum egală cu cea a celorlalte butoane */
+}
+
+
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-item .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
+
+  .form-inline {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

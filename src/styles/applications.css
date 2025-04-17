@@ -1,0 +1,26 @@
+.applications {
+    padding: 20px;
+    padding-bottom: 50;
+    height: 500px;
+}
+
+.application-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.application {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.application h3 {
+    margin-top: 0;
+}
+
+.application p {
+    margin-bottom: 5px;
+}

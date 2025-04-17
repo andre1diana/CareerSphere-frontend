@@ -1,0 +1,44 @@
+/* Container principal al paginii */
+.notifications-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Conținutul principal (între navbar și footer) */
+.notifications-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Lista de notificări */
+.notifications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification {
+    padding: 15px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Culori diferite pentru fiecare status */
+.notification.pending {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.notification.reviewed {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.notification.accepted {
+    background-color: #5cb85c;
+    color: #fff;
+}
