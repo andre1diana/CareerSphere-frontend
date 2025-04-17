@@ -32,10 +32,10 @@ This web application is a job recruitment platform (inspired by LinkedIn), desig
 
 ### Employer
 - Can create job postings.
-- Can view applicant messages and profiles/CVs.
+- Can view all aplications for a job
 
 ### Admin
-- Manages and verifies employer companies.
+- Manages and verifies employer posts.
 - Handles user-reported issues (e.g. false information, spam job offers).
 - Has access to platform statistics and administrative tools.
 
@@ -62,21 +62,12 @@ This web application is a job recruitment platform (inspired by LinkedIn), desig
 - JavaScript
 - React
 
-### Backend
-- Java (Spring Boot)
-
-### Database
-- MySQL
-
 ---
 
 ## 📦 Dependencies
 
 - Node.js
 - npm
-- MySQL Server
-- Java + Maven
-- Spring Boot Starter Libraries
 
 ---
 
@@ -84,5 +75,15 @@ This web application is a job recruitment platform (inspired by LinkedIn), desig
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/job-platform.git
-   cd job-platform
+   git clone https://github.com/andre1diana/CareerSphere-frontend.git
+   cd CareerSphere-frontend/frontend
+   
+
+2. Install frontend dependencies:
+   ```
+   npm install
+   
+
+3. Start the frontend development server:
+```
+npm start
