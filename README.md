@@ -76,12 +76,37 @@ This web application is a job recruitment platform (inspired by LinkedIn), desig
 1. Clone the repository:
    ```bash
    git clone https://github.com/andre1diana/CareerSphere-frontend.git
-   cd CareerSphere-frontend
+   cd CareerSphere-frontend/frontend
+   ```
 
 2. Install frontend dependencies:
    ```
    npm install
+   ```
 
 3. Start the frontend development server:
    ```
    npm start
+   ```
+
+---
+
+## 📁 Code Structure
+
+### public:
+Contains images for the Dashboard gallery and index.html (default created with npm). The tab image has been customized.
+
+### src:
+Contains multiple folders:
+
+1. **assets** – Contains all images used in the project (logo, default profile picture, etc.)
+
+2. **components** – Contains all components displayed on the page based on user role, including RoutesComponent where all application routes are defined
+
+3. **context** – Files that save the application context in local storage to maintain functionalities such as login state and component display
+
+4. **pages** – All application pages
+
+5. **styles** – Contains styles used in pages
+
+6. **App.js** – The main component of the project containing contexts and routes to pages
